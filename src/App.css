@@ -1,0 +1,195 @@
+/* Reset dan Styles Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Container untuk Form dan Daftar Laporan */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulir Pengiriman Laporan */
+.report-form {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.report-form h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Input dan Textarea untuk Formulir */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+/* Tombol Kirim */
+.submit-button {
+  margin-top: 16px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Daftar Laporan */
+.report-list {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-list:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.report-list h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.report-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.report-item {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.report-item strong {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.report-item small {
+  color: #777;
+  font-size: 14px;
+}
+
+.report-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsivitas untuk Perangkat Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .report-form,
+  .report-list {
+    padding: 16px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+
+  .login-container, .dashboard-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.login-form button {
+  background-color: #0a5eae;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+}

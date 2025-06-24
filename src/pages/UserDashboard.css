@@ -1,0 +1,177 @@
+/* UserDashboard.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f4f8;
+  color: #333;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #263238;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar button:hover {
+  color: #03a9f4;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header h1 {
+  font-size: 28px;
+}
+
+.alert {
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+.alert.success {
+  background-color: #4caf50;
+}
+
+.alert.error {
+  background-color: #f44336;
+}
+
+/* Actions */
+.dashboard-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.dashboard-actions input {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dashboard-actions button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-actions button:hover {
+  background-color: #1565c0;
+}
+
+/* Form */
+.report-form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.report-form input,
+.report-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.report-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.report-form button:last-child {
+  background-color: #9e9e9e;
+}
+
+/* Report Cards */
+.report-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.report-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.report-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-actions {
+  margin-top: 12px;
+}
+
+.card-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-actions button:first-child {
+  background-color: #2196f3;
+  color: white;
+}
+
+.card-actions button:last-child {
+  background-color: #e53935;
+  color: white;
+}
